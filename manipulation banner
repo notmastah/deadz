@@ -1,0 +1,20 @@
+function fiveEle( element, parent ){
+  if ( parent.children.length > 4 ){
+   parent.insertBefore(element, parent.children[4]);
+ }
+ else parent.appendChild(element);
+}
+
+natbo = 'atOptions = { 		\'key\' : \'64af14307d3a4966977cd570d7cac251\', 		\'format\' : \'iframe\', 		\'height\' : 600, 		\'width\' : 160, 		\'params\' : {} 	};';
+snatbo = 'https://gadsatz.com/64af14307d3a4966977cd570d7cac251/invoke.js';
+var getnatbo = document.createElement('script');
+getnatbo.setAttribute("id","thisnatbo");
+getnatbo.setAttribute("type","text/javascript");
+getnatbo.innerHTML = natbo;
+tracks = document.getElementsByClassName("tracks")[0];
+fiveEle(getnatbo, tracks);
+
+var lnatbo = document.createElement('script');
+lnatbo.setAttribute("type","text/javascript");
+lnatbo.setAttribute("src",snatbo);
+document.getElementById("thisnatbo").appendChild(lnatbo)
