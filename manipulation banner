@@ -5,16 +5,16 @@ function fiveEle( element, parent ){
  else parent.appendChild(element);
 }
 
-natbo = 'atOptions = { 		\'key\' : \'64af14307d3a4966977cd570d7cac251\', 		\'format\' : \'iframe\', 		\'height\' : 600, 		\'width\' : 160, 		\'params\' : {} 	};';
-snatbo = 'https://gadsatz.com/64af14307d3a4966977cd570d7cac251/invoke.js';
-var getnatbo = document.createElement('script');
-getnatbo.setAttribute("id","thisnatbo");
-getnatbo.setAttribute("type","text/javascript");
-getnatbo.innerHTML = natbo;
+nabo = 'atOptions = { 		\'key\' : \'64af14307d3a4966977cd570d7cac251\', 		\'format\' : \'iframe\', 		\'height\' : 600, 		\'width\' : 160, 		\'params\' : {} 	};';
+snabo = 'https://gadsatz.com/64af14307d3a4966977cd570d7cac251/invoke.js';
+var getnabo = document.createElement('script');
+getnabo.setAttribute("id","thisnabo");
+getnabo.setAttribute("type","text/javascript");
+getnabo.innerHTML = nabo;
 tracks = document.getElementsByClassName("tracks")[0];
-fiveEle(getnatbo, tracks);
+fiveEle(getnabo, tracks);
 
-var lnatbo = document.createElement('script');
-lnatbo.setAttribute("type","text/javascript");
-lnatbo.setAttribute("src",snatbo);
-document.getElementById("thisnatbo").appendChild(lnatbo)
+var lnabo = document.createElement('script');
+lnabo.setAttribute("type","text/javascript");
+lnabo.setAttribute("src",snabo);
+document.getElementById("thisnabo").appendChild(lnabo)
